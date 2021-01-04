@@ -14,6 +14,7 @@ $Dark: hsl(257, 27%, 26%);
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -111,6 +112,7 @@ body {
     }
     .round-button {
       padding: 11px 40px;
+      text-decoration: none;
     }
   }
 }

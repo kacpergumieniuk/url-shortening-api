@@ -9,6 +9,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -130,6 +131,7 @@ body {
 
 .wrapper .start .round-button {
   padding: 11px 40px;
+  text-decoration: none;
 }
 
 .input-section-wrapper {
