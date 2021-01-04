@@ -11,6 +11,11 @@ $Dark: hsl(257, 27%, 26%);
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -41,9 +46,52 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     i {
       color: #9b99a4;
+    }
+
+    .nav-menu {
+      position: absolute;
+      width: 100%;
+      height: 350px;
+      background-color: #3a3053;
+      color: white;
+      bottom: -370px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      list-style: none;
+      border-radius: 12px;
+      transform: translateX(150%);
+
+      transition: 0.5s;
+      li {
+        font-weight: 700;
+        padding: 13px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      .blue {
+        background-color: $Cyan;
+        width: 90%;
+        border-radius: 24px;
+        text-align: center;
+        padding: 9px;
+      }
+      .break {
+        border-bottom: 2px solid #53496c;
+        width: 95%;
+        text-align: center;
+        margin-bottom: 12px;
+        padding-bottom: 25px;
+      }
+    }
+    .active {
+      transform: translateX(0%);
     }
   }
 
@@ -85,6 +133,7 @@ body {
     margin-bottom: 25px;
     margin-left: 5%;
     margin-right: 5%;
+    position: relative;
     input {
       width: 100%;
       margin-bottom: 15px;
@@ -104,8 +153,15 @@ body {
       margin: 0 auto;
       font-weight: 700;
       padding: 12px;
-
+      cursor: pointer;
       border-radius: 8px;
+    }
+    p {
+      color: rgb(189, 59, 59);
+      position: absolute;
+      font-size: 13px;
+      top: 43%;
+      display: none;
     }
   }
   .results {
@@ -120,14 +176,14 @@ body {
       .link {
         padding: 10px 10px;
         color: black;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid #e5e5e5;
         font-size: 18px;
       }
       .short {
         padding: 10px 10px;
         color: $Cyan;
       }
-      .button {
+      .copybutton {
         background-color: $Cyan;
         color: white;
         display: flex;
@@ -137,6 +193,11 @@ body {
         margin: 0 auto;
         padding: 8px 0;
         border-radius: 8px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .copied {
+        background-color: hsl(257, 27%, 26%);
       }
     }
   }
@@ -232,6 +293,7 @@ body {
     ul {
       font-weight: 300;
       padding: 4px 0;
+      cursor: pointer;
     }
   }
 

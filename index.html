@@ -21,7 +21,14 @@
 
   <nav>
   <img src="/images/logo.svg" alt="">
-  <i class="fas fa-bars fa-lg"></i>
+  <ul class="nav-menu">
+    <li>Features</li>
+    <li>Pricing</li>
+    <li class="break">Resources</li>
+    <li>Login</li>
+    <li class="blue">Sign up</li>
+  </ul>
+  <i class="fas fa-bars fa-lg" id="hamburger"></i>
   </nav>
 
   <div class="start">
@@ -34,11 +41,12 @@
 <div class="input-section-wrapper">
   <div class="gray-bg"></div>
   <div class="input">
-    <input type="text" placeholder="Shorten a link here...">
-    <div class="rect-button">Shorten it!</div>
+    <input type="text" placeholder="Shorten a link here..." id="input">
+    <p id="error">Please add a link</p>
+    <div class="rect-button" id="submit">Shorten it!</div>
   </div>
 
-   <div class="results"><!-- 
+   <div class="results" id="results"><!-- 
     <div class="result">
       <p class="link">https://www.frontendmentor.io</p>
       <p class="short">https://rel.ink/k4IKyk</p>
@@ -129,7 +137,7 @@
   </div>
 
 
-
+<script src="app.js"></script>
 </body>
 </html>
 
