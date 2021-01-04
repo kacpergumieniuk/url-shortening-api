@@ -125,7 +125,11 @@ body {
 
 .wrapper .start p {
   color: #9e9aa7;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.wrapper .start .round-button {
+  padding: 11px 40px;
 }
 
 .input-section-wrapper {
