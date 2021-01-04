@@ -137,6 +137,7 @@ body {
 
 .input-section-wrapper {
   position: relative;
+  padding-top: 20px;
 }
 
 .input-section-wrapper .gray-bg {
@@ -145,7 +146,7 @@ body {
   background-color: #f0f1f6;
   height: 1500px;
   z-index: -20;
-  top: 75px;
+  top: 95px;
 }
 
 .input-section-wrapper .input {
