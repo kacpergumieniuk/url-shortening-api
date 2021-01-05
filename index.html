@@ -20,7 +20,7 @@
 <div class="wrapper">
 
   <nav>
-  <img src="/images/logo.svg" alt="">
+  <img src="/images/logo.svg" alt="" id="mobile-logo">
   <ul class="nav-menu">
     <li>Features</li>
     <li>Pricing</li>
@@ -29,6 +29,15 @@
     <li class="blue">Sign up</li>
   </ul>
   <i class="fas fa-bars fa-lg" id="hamburger"></i>
+  <ul class="nav-menu-desktop menu-start">
+    <img src="/images/logo.svg" alt="" id="desktop-logo">
+    <li>Features</li>
+    <li>Pricing</li>
+    <li>Resources</li></ul>
+    <ul class="nav-menu-desktop menu-end">
+      <li>Login</li>
+    <li class="blue">Sign up</li>
+    </ul>
   </nav>
 
   <div class="start">
@@ -46,13 +55,15 @@
     <div class="rect-button" id="submit">Shorten it!</div>
   </div>
 
-   <div class="results" id="results"><!-- 
+   <div class="results" id="results">
+     <!--  
     <div class="result">
       <p class="link">https://www.frontendmentor.io</p>
       <p class="short">https://rel.ink/k4IKyk</p>
-      <div class="button">Copy</div>
+      <div class="copybutton">Copy</div>
     </div>
     -->
+    
   </div>
 
   <div class="statistics">
@@ -63,7 +74,7 @@
 
   <div class="sections">
 
-    <div class="section">
+    <div class="section" id="section1">
       <div class="section-image">
       <img src="/images/icon-brand-recognition.svg" alt="">
     </div>
@@ -73,7 +84,7 @@
         <div class="greenthing"></div>
     </div>
 
-    <div class="section">
+    <div class="section" id="section2">
       <div class="section-image">
       <img src="/images/icon-detailed-records.svg" alt="">
     </div>
@@ -83,7 +94,7 @@
         <div class="greenthing"></div>
     </div>
 
-    <div class="section">
+    <div class="section" id="section3">
       <div class="section-image">
       <img src="/images/icon-fully-customizable.svg" alt="">
     </div>
@@ -104,6 +115,7 @@
 <div class="footer">
   <h2>Shortly</h2>
 
+<div class="footer-section">
   <p class="label">Features</p>
   <li class="footer-list">
     
@@ -111,7 +123,9 @@
     <ul>Branded Links</ul>
     <ul>Analytics</ul>
   </li>
+</div>
 
+<div class="footer-section">
   <p class="label">Resources</p>
   <li class="footer-list">
     
@@ -119,7 +133,9 @@
     <ul>Developers</ul>
     <ul>Support</ul>
   </li>
+</div>
 
+<div class="footer-section">
   <p class="label">Company</p>
   <li class="footer-list">
     
@@ -128,6 +144,7 @@
     <ul>Careers</ul>
     <ul>Contact</ul>
   </li>
+</div>
 
   <div class="icons">
     <i class="fab fa-facebook-square"></i>

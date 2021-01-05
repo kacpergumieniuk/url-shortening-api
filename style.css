@@ -108,6 +108,10 @@ body {
   padding-bottom: 25px;
 }
 
+.wrapper nav .nav-menu-desktop {
+  display: none;
+}
+
 .wrapper nav .active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -362,5 +366,189 @@ body {
 .footer .icons i {
   margin: 0 6px;
   cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  .wrapper {
+    padding: 30px 10% 0 10%;
+    background-size: 600px;
+    background-position: calc(100% + 100px) 120px;
+  }
+  .wrapper nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper nav #mobile-logo {
+    display: none;
+  }
+  .wrapper nav i {
+    display: none;
+  }
+  .wrapper nav .nav-menu {
+    display: none;
+  }
+  .wrapper nav .nav-menu-desktop {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #9e9aa7;
+    font-weight: 700;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
+  }
+  .wrapper nav .menu-start #desktop-logo {
+    margin-right: 30px;
+  }
+  .wrapper nav .menu-start li {
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .wrapper nav .menu-end li {
+    padding: 0 30px;
+    cursor: pointer;
+  }
+  .wrapper nav .menu-end .blue {
+    background-color: #2acfcf;
+    color: white;
+    border-radius: 18px;
+    padding: 5px 20px;
+  }
+  .wrapper .start {
+    text-align: left;
+    padding: 110px 0 50px 0;
+  }
+  .wrapper .start h1 {
+    font-size: 68px;
+    max-width: 550px;
+  }
+  .wrapper .start p {
+    max-width: 550px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .input-section-wrapper .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px 50px;
+    background-image: url(/images/bg-shorten-desktop.svg);
+    background-size: cover;
+  }
+  .input-section-wrapper .input input {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .input-section-wrapper .input .rect-button {
+    width: 225px;
+    height: 50%;
+  }
+  .input-section-wrapper .results .result {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
+  }
+  .input-section-wrapper .results .result .link {
+    border: none;
+    padding: 0;
+  }
+  .input-section-wrapper .results .result .short {
+    margin-left: auto;
+  }
+  .input-section-wrapper .results .result .copybutton {
+    width: 100px;
+    padding: 6px 0;
+    margin: 0;
+    margin-left: 7px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+  .input-section-wrapper .statistics {
+    padding-top: 75px;
+    margin-bottom: 100px;
+  }
+  .input-section-wrapper .statistics h2 {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+  .input-section-wrapper .statistics p {
+    font-size: 18px;
+    max-width: 525px;
+    margin: 0 auto;
+  }
+  .input-section-wrapper .sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10%;
+    text-align: left;
+    padding-bottom: 125px;
+  }
+  .input-section-wrapper .sections .section {
+    margin-bottom: 0;
+    height: 250px;
+  }
+  .input-section-wrapper .sections .section .section-image {
+    left: calc(20% - 46px);
+    padding: 23px;
+  }
+  .input-section-wrapper .sections .section .section-image img {
+    width: 45px;
+  }
+  .input-section-wrapper .sections .section .greenthing {
+    width: 100%;
+    height: 8px;
+    top: 130px;
+  }
+  .input-section-wrapper .sections .section p {
+    color: #bfbfbf;
+  }
+  .input-section-wrapper .sections #section1 {
+    margin-right: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .input-section-wrapper .sections #section2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 35px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .input-section-wrapper .sections #section2 .greenthing {
+    top: 100px;
+  }
+  .input-section-wrapper .sections #section3 {
+    margin-left: 15px;
+    margin-top: 70px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .boost {
+    padding: 65px 0;
+    background-image: url(/images/bg-boost-desktop.svg);
+  }
+  .boost h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
