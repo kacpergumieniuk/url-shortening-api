@@ -15,7 +15,7 @@ async function initialize(url){
     window.className = 'result';
     window.innerHTML = `<p class="link">${originalLink}</p>
     <p class="short">${shortLink}</p>
-    <div class="copybutton">Copy</div>`
+    <div class="copybutton" >Copy</div>`
     results.appendChild(window);
 }
 
@@ -24,7 +24,7 @@ async function initialize(url){
 submit.addEventListener('click' , () => {
     
     let value = input.value;
-
+    if (window.screen.width < 1100){
     if(value === ''){
         console.error('Input empty')
         input.style = `border: 2px solid red;
@@ -38,6 +38,23 @@ submit.addEventListener('click' , () => {
         error.style = 'display: none;'
         
     }
+}
+else{
+    if(value === ''){
+        console.error('Input empty')
+        input.style = `border: 2px solid red;
+        `
+        error.style = 'display:block;'
+        
+    }
+    else{
+        initialize(`https://api.shrtco.de/v2/shorten?url=${value}`);
+        input.style = 'border: none;'
+        error.style = 'display: none;'
+        
+    }
+
+}
 })
 
 let state = 0;

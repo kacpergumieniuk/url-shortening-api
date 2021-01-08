@@ -33,6 +33,11 @@ body {
   color: white;
   border-radius: 24px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.round-button:hover {
+  background-color: hsl(180, 62%, 74%);
 }
 
 .wrapper {
@@ -318,7 +323,7 @@ body {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
   .wrapper {
     padding: 30px 10% 0 10%;
     background-size: 600px;
@@ -349,6 +354,10 @@ body {
         li {
           padding: 0 15px;
           cursor: pointer;
+          transition: 0.5s;
+        }
+        li:hover {
+          color: black;
         }
       }
       .menu-end {
@@ -356,11 +365,21 @@ body {
           padding: 0 30px;
           cursor: pointer;
         }
+        #login {
+          transition: 0.5s;
+        }
+        #login:hover {
+          color: black;
+        }
         .blue {
           background-color: $Cyan;
           color: white;
           border-radius: 18px;
           padding: 5px 20px;
+          transition: 0.5s;
+        }
+        .blue:hover {
+          background-color: hsl(180, 62%, 74%);
         }
       }
     }
@@ -380,6 +399,9 @@ body {
     }
   }
   .input-section-wrapper {
+    .gray-bg {
+      height: 1000px;
+    }
     .input {
       display: flex;
       align-items: center;
@@ -395,6 +417,15 @@ body {
       .rect-button {
         width: 225px;
         height: 50%;
+        transition: 0.5s;
+      }
+      .rect-button:hover {
+        background-color: hsl(180, 62%, 74%);
+      }
+      p {
+        top: 73%;
+        font-size: 12px;
+        transform: translateX(2px);
       }
     }
     .results {
@@ -423,6 +454,10 @@ body {
           margin-left: 7px;
           font-size: 14px;
           border-radius: 6px;
+          transition: 0.5s;
+        }
+        .copybutton:hover {
+          background-color: hsl(180, 62%, 74%);
         }
       }
     }
@@ -484,11 +519,43 @@ body {
     }
   }
   .boost {
-    padding: 65px 0;
+    padding: 70px 0;
     background-image: url(/images/bg-boost-desktop.svg);
     h3 {
       font-size: 32px;
       margin-bottom: 20px;
+    }
+  }
+  .footer {
+    text-align: left;
+    display: flex;
+    padding: 60px 10% 40px 10%;
+    justify-content: space-between;
+
+    h2 {
+      padding: 0;
+      margin-right: 10%;
+    }
+
+    .footer-section {
+      li {
+        ul {
+          transition: 0.5s;
+        }
+        ul:hover {
+          color: $Cyan;
+        }
+      }
+    }
+
+    .icons {
+      margin-top: 18px;
+      i {
+        transition: 0.5s;
+      }
+      i:hover {
+        color: $Cyan;
+      }
     }
   }
 }
