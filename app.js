@@ -3,8 +3,10 @@ const results = document.getElementById('results');
 const submit = document.getElementById('submit');
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('.nav-menu');
-const copybuttons = document.querySelectorAll('.copybutton')
-const error = document.getElementById('error')
+const copybuttons = document.querySelectorAll('.copybutton');
+const error = document.getElementById('error');
+const boostbutton = document.getElementById('boost-button');
+const inputsectionwrapper = document.getElementById('input-section-wrapper');
 
 async function initialize(url){
     const getting = await fetch(url);
@@ -15,8 +17,9 @@ async function initialize(url){
     window.className = 'result';
     window.innerHTML = `<p class="link">${originalLink}</p>
     <p class="short">${shortLink}</p>
-    <div class="copybutton" >Copy</div>`
+    <div class="copybutton">Copy</div>`
     results.appendChild(window);
+    ;
 }
 
 
@@ -73,5 +76,11 @@ hamburger.addEventListener('click' , () => {
     }
 
 })
+
+
+boostbutton.addEventListener('click', () => {
+    inputsectionwrapper.scrollIntoView();
+})
+
 
 
