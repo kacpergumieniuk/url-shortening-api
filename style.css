@@ -61,6 +61,7 @@ body {
 .wrapper nav i {
   color: #9b99a4;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .wrapper nav .nav-menu {
@@ -199,6 +200,12 @@ body {
   padding: 12px;
   cursor: pointer;
   border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-section-wrapper .input .rect-button:hover {
+  background-color: #94e6e6;
 }
 
 .input-section-wrapper .input p {
@@ -250,6 +257,10 @@ body {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.input-section-wrapper .results .result .copybutton:hover {
+  background-color: #94e6e6;
 }
 
 .input-section-wrapper .results .result .copied {
@@ -476,11 +487,6 @@ body {
   .input-section-wrapper .input .rect-button {
     width: 225px;
     height: 50%;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  .input-section-wrapper .input .rect-button:hover {
-    background-color: #94e6e6;
   }
   .input-section-wrapper .input p {
     top: 73%;
@@ -516,9 +522,6 @@ body {
     border-radius: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-  }
-  .input-section-wrapper .results .result .copybutton:hover {
-    background-color: #94e6e6;
   }
   .input-section-wrapper .statistics {
     padding-top: 75px;
@@ -622,6 +625,27 @@ body {
   }
   .footer .icons i:hover {
     color: #2acfcf;
+  }
+}
+
+@media (min-width: 1800px) {
+  .wrapper {
+    padding: 30px 15% 0 15%;
+    background-size: 650px;
+  }
+  .input-section-wrapper .input {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .input-section-wrapper .results .result {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .input-section-wrapper .sections {
+    margin: 0 15%;
+  }
+  .footer {
+    padding: 60px 15% 40px 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */

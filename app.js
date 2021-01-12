@@ -1,3 +1,5 @@
+//DOM VARIABLES
+
 const input = document.getElementById('input');
 const results = document.getElementById('results');
 const submit = document.getElementById('submit');
@@ -8,18 +10,40 @@ const error = document.getElementById('error');
 const boostbutton = document.getElementById('boost-button');
 const inputsectionwrapper = document.getElementById('input-section-wrapper');
 
+
+//RESULTS AND COPYING FUNCTIONALITY 
+
 async function initialize(url){
+
     const getting = await fetch(url);
     const data = await getting.json();
+
     const shortLink = data.result.full_short_link;
     const originalLink = data.result.original_link;
     const window = document.createElement('div');
+
     window.className = 'result';
+
     window.innerHTML = `<p class="link">${originalLink}</p>
     <p class="short">${shortLink}</p>
-    <div class="copybutton">Copy</div>`
+    <div class="copybutton" onclick = copyButton(this) data-copy = ${shortLink}>Copy</div>`
+
     results.appendChild(window);
-    ;
+}
+
+function copyButton(index){
+
+    index.style = `background-color: hsl(257, 27%, 26%)`;
+    index.innerHTML = `Copied`;
+
+    let link = index.dataset.copy;
+    const dummy = document.createElement("textarea");
+
+    document.body.appendChild(dummy);
+    dummy.value = link;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
 }
 
 
@@ -60,6 +84,8 @@ else{
 }
 })
 
+//HAMBURGER MENU 
+
 let state = 0;
 hamburger.addEventListener('click' , () => {
     if(state === 0){
@@ -77,10 +103,10 @@ hamburger.addEventListener('click' , () => {
 
 })
 
+//PAGE SCROLLING
 
 boostbutton.addEventListener('click', () => {
     inputsectionwrapper.scrollIntoView();
 })
-
 
 
